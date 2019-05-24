@@ -1,0 +1,49 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port mdio_0 -pg 1 -y 340 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -y 40 -defaultsOSRD
+preplace port mm2s_introut -pg 1 -y 250 -defaultsOSRD
+preplace port M_AXI_MM2S -pg 1 -y 90 -defaultsOSRD
+preplace port rgmii_0 -pg 1 -y 380 -defaultsOSRD
+preplace port s_axi -pg 1 -y 90 -defaultsOSRD
+preplace port mac_irq -pg 1 -y 320 -defaultsOSRD
+preplace port M_AXI_S2MM -pg 1 -y 110 -defaultsOSRD
+preplace port s2mm_introut -pg 1 -y 270 -defaultsOSRD
+preplace port axi_resetn -pg 1 -y 410 -defaultsOSRD
+preplace port m_axi_sg_aclk -pg 1 -y 330 -defaultsOSRD
+preplace port interrupt -pg 1 -y 400 -defaultsOSRD
+preplace port M_AXI_SG -pg 1 -y 70 -defaultsOSRD
+preplace portBus reset_rtl_0 -pg 1 -y 360 -defaultsOSRD
+preplace inst axi_ethernet_0_refclk -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace inst axi_ethernet_0 -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace inst axi_ethernet_0_dma -pg 1 -lvl 3 -y 170 -defaultsOSRD
+preplace netloc axi_ethernet_0_dma_M_AXIS_MM2S 1 1 3 250 430 630J 370 1090
+preplace netloc axi_ethernet_0_refclk_clk_out1 1 1 1 210
+preplace netloc axi_ethernet_0_refclk_clk_out2 1 1 1 240
+preplace netloc axi_ethernet_0_rgmii 1 2 2 610J 380 NJ
+preplace netloc axi_ethernet_0_phy_rst_n 1 2 2 600J 360 NJ
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 3 NJ 410 230 460 640J
+preplace netloc axi_ethernet_0_interrupt 1 2 2 590J 400 NJ
+preplace netloc axi_ethernet_0_dma_mm2s_prmry_reset_out_n 1 1 3 260 440 620J 350 1050
+preplace netloc axi_ethernet_0_dma_M_AXI_MM2S 1 3 1 NJ
+preplace netloc axi_ethernet_0_dma_M_AXIS_CNTRL 1 1 3 230 10 NJ 10 1050
+preplace netloc ps7_0_FCLK_CLK0 1 0 3 10 190 220 20 680
+preplace netloc axi_ethernet_0_dma_mm2s_cntrl_reset_out_n 1 1 3 270 450 660J 390 1080
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 3 NJ 40 210J 30 690J
+preplace netloc axi_ethernet_0_mac_irq 1 2 2 620J 330 1100J
+preplace netloc axi_ethernet_0_dma_M_AXI_S2MM 1 3 1 NJ
+preplace netloc axi_ethernet_0_dma_M_AXI_SG 1 3 1 NJ
+preplace netloc axi_ethernet_0_dma_s2mm_prmry_reset_out_n 1 1 3 280 470 680J 410 1070
+preplace netloc axi_ethernet_0_dma_mm2s_introut 1 3 1 NJ
+preplace netloc axi_ethernet_0_m_axis_rxd 1 2 1 670
+preplace netloc axi_ethernet_0_dma_s2mm_introut 1 3 1 NJ
+preplace netloc axi_ethernet_0_m_axis_rxs 1 2 1 660
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 2 NJ 90 210J
+preplace netloc axi_ethernet_0_mdio 1 2 2 650J 340 NJ
+preplace netloc axi_ethernet_0_dma_s2mm_sts_reset_out_n 1 1 3 290 480 690J 420 1060
+levelinfo -pg 1 -10 110 440 870 1120 -top 0 -bot 490
+"
+}
+0
