@@ -301,7 +301,7 @@ ARCHITECTURE bd_6e76_eth_buf_0_arch OF bd_6e76_eth_buf_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF bd_6e76_eth_buf_0_arch : ARCHITECTURE IS "bd_6e76_eth_buf_0,axi_ethernet_buffer_v2_0_19,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF bd_6e76_eth_buf_0_arch: ARCHITECTURE IS "bd_6e76_eth_buf_0,axi_ethernet_buffer_v2_0_19,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_ethernet_buffer,x_ipVersion=2.0,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_TXMEM=4096,C_TEMAC_ADDR_WIDTH=12,C_RXMEM=4096,C_TXCSUM=2,C_RXCSUM=2,C_PHYADDR=1,C_AVB=0,C_STATS=1,C_PHY_TYPE=3,C_TYPE=1,C_TXVLAN_TRAN=1,C_RXVLAN_TRAN=1,C_TXVLAN_TAG=1,C_RXVLAN_TAG=1,C_TXVLAN_STRP=1,C_RXVLAN_STRP=1,C_MCAST_EXTEND=0,C_ENABLE_LVDS=0,C_ENABLE_1588=0,C_S" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF bd_6e76_eth_buf_0_arch: ARCHITECTURE IS "bd_6e76_eth_buf_0,axi_ethernet_buffer_v2_0_19,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_ethernet_buffer,x_ipVersion=2.0,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_TXMEM=8192,C_TEMAC_ADDR_WIDTH=12,C_RXMEM=8192,C_TXCSUM=0,C_RXCSUM=0,C_PHYADDR=1,C_AVB=0,C_STATS=1,C_PHY_TYPE=3,C_TYPE=1,C_TXVLAN_TRAN=1,C_RXVLAN_TRAN=1,C_TXVLAN_TAG=1,C_RXVLAN_TAG=1,C_TXVLAN_STRP=1,C_RXVLAN_STRP=1,C_MCAST_EXTEND=0,C_ENABLE_LVDS=0,C_ENABLE_1588=0,C_S" & 
 "IMULATION=0,C_PHY_RST_COUNT=500}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
@@ -433,11 +433,11 @@ BEGIN
   U0 : axi_ethernet_buffer_v2_0_19
     GENERIC MAP (
       C_FAMILY => "zynq",
-      C_TXMEM => 4096,
+      C_TXMEM => 8192,
       C_TEMAC_ADDR_WIDTH => 12,
-      C_RXMEM => 4096,
-      C_TXCSUM => 2,
-      C_RXCSUM => 2,
+      C_RXMEM => 8192,
+      C_TXCSUM => 0,
+      C_RXCSUM => 0,
       C_PHYADDR => 1,
       C_AVB => 0,
       C_STATS => 1,

@@ -254,14 +254,14 @@ proc create_root_design { parentCell } {
    CONFIG.HAS_SGMII {false} \
    CONFIG.MCAST_EXTEND {false} \
    CONFIG.PHYRST_BOARD_INTERFACE {Custom} \
-   CONFIG.RXCSUM {Full} \
-   CONFIG.RXMEM {4k} \
+   CONFIG.RXCSUM {None} \
+   CONFIG.RXMEM {8k} \
    CONFIG.RXVLAN_STRP {true} \
    CONFIG.RXVLAN_TAG {true} \
    CONFIG.RXVLAN_TRAN {true} \
    CONFIG.SIMULATION_MODE {false} \
-   CONFIG.TXCSUM {Full} \
-   CONFIG.TXMEM {4k} \
+   CONFIG.TXCSUM {None} \
+   CONFIG.TXMEM {8k} \
    CONFIG.TXVLAN_STRP {true} \
    CONFIG.TXVLAN_TAG {true} \
    CONFIG.TXVLAN_TRAN {true} \

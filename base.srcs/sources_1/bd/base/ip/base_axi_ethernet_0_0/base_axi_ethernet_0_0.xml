@@ -15742,11 +15742,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:43:57 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bd708af6</spirit:value>
+            <spirit:value>9:78275f78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15760,11 +15760,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:43:57 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8300f5bd</spirit:value>
+            <spirit:value>9:6bb4d62e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15779,11 +15779,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:31 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc3e3711</spirit:value>
+            <spirit:value>9:6b649f48</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -15803,11 +15803,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:31 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc3e3711</spirit:value>
+            <spirit:value>9:6b649f48</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -15823,7 +15823,7 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:748dc4b8</spirit:value>
+            <spirit:value>9:aa547b5c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -15843,11 +15843,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:31 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:748dc4b8</spirit:value>
+            <spirit:value>9:aa547b5c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -15865,11 +15865,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:31 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc3e3711</spirit:value>
+            <spirit:value>9:6b649f48</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -15887,11 +15887,11 @@ In both cases, the FCS is verified on the frame.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:51:09 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:49:33 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc3e3711</spirit:value>
+            <spirit:value>9:6b649f48</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -17465,7 +17465,7 @@ In both cases, the FCS is verified on the frame.
     <spirit:parameter>
       <spirit:name>RXMEM</spirit:name>
       <spirit:displayName>RX Memory Size</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="2700">4k</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="2700">8k</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17477,7 +17477,7 @@ In both cases, the FCS is verified on the frame.
     <spirit:parameter>
       <spirit:name>TXMEM</spirit:name>
       <spirit:displayName>TX Memory Size</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="2800">4k</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="2800">8k</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17489,7 +17489,7 @@ In both cases, the FCS is verified on the frame.
     <spirit:parameter>
       <spirit:name>TXCSUM</spirit:name>
       <spirit:displayName>TX Checksum Offload</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="2900">Full</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="2900">None</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17501,7 +17501,7 @@ In both cases, the FCS is verified on the frame.
     <spirit:parameter>
       <spirit:name>RXCSUM</spirit:name>
       <spirit:displayName>RX Checksum Offload</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="3000">Full</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="3000">None</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17878,10 +17878,12 @@ In both cases, the FCS is verified on the frame.
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TXD.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PHY_TYPE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RXCSUM" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RXMEM" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RXVLAN_STRP" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RXVLAN_TAG" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RXVLAN_TRAN" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TXCSUM" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TXMEM" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TXVLAN_STRP" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TXVLAN_TAG" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TXVLAN_TRAN" xilinx:valueSource="user"/>

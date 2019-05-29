@@ -177,11 +177,13 @@ proc create_hier_cell_eth { parentCell nameHier } {
   set axi_ethernet_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet:7.1 axi_ethernet_0 ]
   set_property -dict [ list \
    CONFIG.PHY_TYPE {RGMII} \
-   CONFIG.RXCSUM {Full} \
+   CONFIG.RXCSUM {None} \
+   CONFIG.RXMEM {8k} \
    CONFIG.RXVLAN_STRP {true} \
    CONFIG.RXVLAN_TAG {true} \
    CONFIG.RXVLAN_TRAN {true} \
-   CONFIG.TXCSUM {Full} \
+   CONFIG.TXCSUM {None} \
+   CONFIG.TXMEM {8k} \
    CONFIG.TXVLAN_STRP {true} \
    CONFIG.TXVLAN_TAG {true} \
    CONFIG.TXVLAN_TRAN {true} \

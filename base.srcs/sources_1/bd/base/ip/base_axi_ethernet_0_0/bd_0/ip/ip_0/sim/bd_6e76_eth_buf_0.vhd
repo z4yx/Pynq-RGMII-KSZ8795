@@ -426,11 +426,11 @@ BEGIN
   U0 : axi_ethernet_buffer_v2_0_19
     GENERIC MAP (
       C_FAMILY => "zynq",
-      C_TXMEM => 4096,
+      C_TXMEM => 8192,
       C_TEMAC_ADDR_WIDTH => 12,
-      C_RXMEM => 4096,
-      C_TXCSUM => 2,
-      C_RXCSUM => 2,
+      C_RXMEM => 8192,
+      C_TXCSUM => 0,
+      C_RXCSUM => 0,
       C_PHYADDR => 1,
       C_AVB => 0,
       C_STATS => 1,

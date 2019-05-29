@@ -7,14 +7,14 @@ set_property -dict {PACKAGE_PIN M18 IOSTANDARD LVCMOS33} [get_ports hdmi_out_ddc
 
 ##Pmod Header JA
 
-set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_tx_ctl }]; #IO_L17P_T2_34 Sch=ja_p[1]
-set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_td[1] }]; #IO_L17N_T2_34 Sch=ja_n[1]
-set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_td[3] }]; #IO_L7P_T1_34 Sch=ja_p[2]
+set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_tx_ctl }]; #IO_L17P_T2_34 Sch=ja_p[1]
+set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_td[1] }]; #IO_L17N_T2_34 Sch=ja_n[1]
+set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_td[3] }]; #IO_L7P_T1_34 Sch=ja_p[2]
 set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { SPI_0_0_sck_io }]; #IO_L7N_T1_34 Sch=ja_n[2]
 set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_rxc }]; #IO_L12P_T1_MRCC_34 Sch=ja_p[3]
-set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_td[0] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
-set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_td[2] }]; #IO_L22P_T3_34 Sch=ja_p[4]
-set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_txc }]; #IO_L22N_T3_34 Sch=ja_n[4]
+set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_td[0] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
+set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_td[2] }]; #IO_L22P_T3_34 Sch=ja_p[4]
+set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 DRIVE 24 } [get_ports { rgmii_0_txc }]; #IO_L22N_T3_34 Sch=ja_n[4]
 
 ##Pmod Header JB
 

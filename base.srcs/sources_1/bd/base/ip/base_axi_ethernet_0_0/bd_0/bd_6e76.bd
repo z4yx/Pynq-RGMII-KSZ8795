@@ -682,10 +682,10 @@
             "value": "Custom"
           },
           "RXCSUM": {
-            "value": "Full"
+            "value": "None"
           },
           "RXMEM": {
-            "value": "4k"
+            "value": "8k"
           },
           "RXVLAN_STRP": {
             "value": "true"
@@ -700,10 +700,10 @@
             "value": "false"
           },
           "TXCSUM": {
-            "value": "Full"
+            "value": "None"
           },
           "TXMEM": {
-            "value": "4k"
+            "value": "8k"
           },
           "TXVLAN_STRP": {
             "value": "true"
@@ -860,6 +860,24 @@
           "mac/s_axi"
         ]
       },
+      "eth_buf_AXI_STR_RXS": {
+        "interface_ports": [
+          "m_axis_rxs",
+          "eth_buf/AXI_STR_RXS"
+        ]
+      },
+      "mac_m_axis_rx": {
+        "interface_ports": [
+          "eth_buf/RX_AXIS_MAC",
+          "mac/m_axis_rx"
+        ]
+      },
+      "mac_rgmii": {
+        "interface_ports": [
+          "rgmii",
+          "mac/rgmii"
+        ]
+      },
       "s_axi_1": {
         "interface_ports": [
           "s_axi",
@@ -884,28 +902,10 @@
           "eth_buf/AXI_STR_RXD"
         ]
       },
-      "eth_buf_AXI_STR_RXS": {
-        "interface_ports": [
-          "m_axis_rxs",
-          "eth_buf/AXI_STR_RXS"
-        ]
-      },
-      "mac_m_axis_rx": {
-        "interface_ports": [
-          "eth_buf/RX_AXIS_MAC",
-          "mac/m_axis_rx"
-        ]
-      },
       "eth_buf_TX_AXIS_MAC": {
         "interface_ports": [
           "eth_buf/TX_AXIS_MAC",
           "mac/s_axis_tx"
-        ]
-      },
-      "mac_rgmii": {
-        "interface_ports": [
-          "rgmii",
-          "mac/rgmii"
         ]
       },
       "mac_mdio_internal": {

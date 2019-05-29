@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat May 18 23:46:18 2019
+// Date        : Sat May 18 23:46:17 2019
 // Host        : nuc6i7 running 64-bit Ubuntu 19.04
-// Command     : write_verilog -force -mode funcsim
-//               /home/zhang/Projects/teaching/pynq-router/base/base/base.srcs/sources_1/bd/base/ip/base_axi_ethernet_0_0/bd_0/ip/ip_5/bd_6e76_util_vector_logic_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top bd_6e76_util_vector_logic_0_0 -prefix
+//               bd_6e76_util_vector_logic_0_0_ bd_6e76_util_vector_logic_0_0_sim_netlist.v
 // Design      : bd_6e76_util_vector_logic_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

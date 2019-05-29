@@ -2908,11 +2908,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:edd7dff9</spirit:value>
+            <spirit:value>9:f673045f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2926,11 +2926,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:edd7dff9</spirit:value>
+            <spirit:value>9:f673045f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2946,11 +2946,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:edd7dff9</spirit:value>
+            <spirit:value>9:f673045f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2977,11 +2977,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e73e49c4</spirit:value>
+            <spirit:value>9:1b59bec9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2997,11 +2997,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e73e49c4</spirit:value>
+            <spirit:value>9:1b59bec9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3015,11 +3015,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:44:32 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:43:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:edd7dff9</spirit:value>
+            <spirit:value>9:f673045f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3033,11 +3033,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 18 15:50:45 UTC 2019</spirit:value>
+            <spirit:value>Wed May 29 13:49:06 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:edd7dff9</spirit:value>
+            <spirit:value>9:f673045f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4595,7 +4595,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_TXMEM</spirit:name>
         <spirit:displayName>C Txmem</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXMEM">4096</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXMEM">8192</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_TEMAC_ADDR_WIDTH</spirit:name>
@@ -4605,17 +4605,17 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RXMEM</spirit:name>
         <spirit:displayName>C Rxmem</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXMEM">4096</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXMEM">8192</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_TXCSUM</spirit:name>
         <spirit:displayName>C Txcsum</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXCSUM" spirit:minimum="0" spirit:maximum="2" spirit:rangeType="long">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXCSUM" spirit:minimum="0" spirit:maximum="2" spirit:rangeType="long">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RXCSUM</spirit:name>
         <spirit:displayName>C Rxcsum</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXCSUM" spirit:minimum="0" spirit:maximum="2" spirit:rangeType="long">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXCSUM" spirit:minimum="0" spirit:maximum="2" spirit:rangeType="long">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PHYADDR</spirit:name>
@@ -4983,22 +4983,22 @@
     <spirit:parameter>
       <spirit:name>TXMEM</spirit:name>
       <spirit:displayName>TX Memory Size</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="1500" spirit:configGroups="1 UnGrouped">4k</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="1500" spirit:configGroups="1 UnGrouped">8k</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RXMEM</spirit:name>
       <spirit:displayName>RX Memory Size</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="1600" spirit:configGroups="1 UnGrouped">4k</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXMEM" spirit:choiceRef="choice_list_33d76c2e" spirit:order="1600" spirit:configGroups="1 UnGrouped">8k</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TXCSUM</spirit:name>
       <spirit:displayName>TX Checksum Offload</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="1700" spirit:configGroups="1 UnGrouped">Full</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="1700" spirit:configGroups="1 UnGrouped">None</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RXCSUM</spirit:name>
       <spirit:displayName>RX Checksum Offload</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="1800" spirit:configGroups="1 UnGrouped">Full</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RXCSUM" spirit:choiceRef="choice_pairs_5415e870" spirit:order="1800" spirit:configGroups="1 UnGrouped">None</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_TYPE</spirit:name>

@@ -2152,6 +2152,18 @@
           }
         },
         "interface_nets": {
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "m02_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
+            ]
+          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
@@ -2170,34 +2182,22 @@
               "m01_couplers/M_AXI"
             ]
           },
-          "m02_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
             ]
           },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
-            ]
-          },
           "m00_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
               "M00_AXI",
               "m00_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
             ]
           }
         },
@@ -2343,7 +2343,10 @@
                 "value": "RGMII"
               },
               "RXCSUM": {
-                "value": "Full"
+                "value": "None"
+              },
+              "RXMEM": {
+                "value": "8k"
               },
               "RXVLAN_STRP": {
                 "value": "true"
@@ -2355,7 +2358,10 @@
                 "value": "true"
               },
               "TXCSUM": {
-                "value": "Full"
+                "value": "None"
+              },
+              "TXMEM": {
+                "value": "8k"
               },
               "TXVLAN_STRP": {
                 "value": "true"
@@ -2459,60 +2465,6 @@
           }
         },
         "interface_nets": {
-          "axi_ethernet_0_dma_M_AXI_SG": {
-            "interface_ports": [
-              "M_AXI_SG",
-              "axi_ethernet_0_dma/M_AXI_SG"
-            ]
-          },
-          "ps7_0_axi_periph_M00_AXI": {
-            "interface_ports": [
-              "s_axi",
-              "axi_ethernet_0/s_axi"
-            ]
-          },
-          "axi_ethernet_0_dma_M_AXI_S2MM": {
-            "interface_ports": [
-              "M_AXI_S2MM",
-              "axi_ethernet_0_dma/M_AXI_S2MM"
-            ]
-          },
-          "axi_ethernet_0_m_axis_rxd": {
-            "interface_ports": [
-              "axi_ethernet_0_dma/S_AXIS_S2MM",
-              "axi_ethernet_0/m_axis_rxd"
-            ]
-          },
-          "axi_ethernet_0_dma_M_AXI_MM2S": {
-            "interface_ports": [
-              "M_AXI_MM2S",
-              "axi_ethernet_0_dma/M_AXI_MM2S"
-            ]
-          },
-          "ps7_0_axi_periph_M01_AXI": {
-            "interface_ports": [
-              "S_AXI_LITE",
-              "axi_ethernet_0_dma/S_AXI_LITE"
-            ]
-          },
-          "axi_ethernet_0_m_axis_rxs": {
-            "interface_ports": [
-              "axi_ethernet_0_dma/S_AXIS_STS",
-              "axi_ethernet_0/m_axis_rxs"
-            ]
-          },
-          "axi_ethernet_0_rgmii": {
-            "interface_ports": [
-              "rgmii_0",
-              "axi_ethernet_0/rgmii"
-            ]
-          },
-          "axi_ethernet_0_dma_M_AXIS_CNTRL": {
-            "interface_ports": [
-              "axi_ethernet_0_dma/M_AXIS_CNTRL",
-              "axi_ethernet_0/s_axis_txc"
-            ]
-          },
           "axi_ethernet_0_mdio": {
             "interface_ports": [
               "mdio_0",
@@ -2523,6 +2475,60 @@
             "interface_ports": [
               "axi_ethernet_0_dma/M_AXIS_MM2S",
               "axi_ethernet_0/s_axis_txd"
+            ]
+          },
+          "axi_ethernet_0_m_axis_rxs": {
+            "interface_ports": [
+              "axi_ethernet_0_dma/S_AXIS_STS",
+              "axi_ethernet_0/m_axis_rxs"
+            ]
+          },
+          "axi_ethernet_0_m_axis_rxd": {
+            "interface_ports": [
+              "axi_ethernet_0_dma/S_AXIS_S2MM",
+              "axi_ethernet_0/m_axis_rxd"
+            ]
+          },
+          "axi_ethernet_0_dma_M_AXIS_CNTRL": {
+            "interface_ports": [
+              "axi_ethernet_0_dma/M_AXIS_CNTRL",
+              "axi_ethernet_0/s_axis_txc"
+            ]
+          },
+          "ps7_0_axi_periph_M01_AXI": {
+            "interface_ports": [
+              "S_AXI_LITE",
+              "axi_ethernet_0_dma/S_AXI_LITE"
+            ]
+          },
+          "axi_ethernet_0_dma_M_AXI_S2MM": {
+            "interface_ports": [
+              "M_AXI_S2MM",
+              "axi_ethernet_0_dma/M_AXI_S2MM"
+            ]
+          },
+          "axi_ethernet_0_dma_M_AXI_MM2S": {
+            "interface_ports": [
+              "M_AXI_MM2S",
+              "axi_ethernet_0_dma/M_AXI_MM2S"
+            ]
+          },
+          "ps7_0_axi_periph_M00_AXI": {
+            "interface_ports": [
+              "s_axi",
+              "axi_ethernet_0/s_axi"
+            ]
+          },
+          "axi_ethernet_0_rgmii": {
+            "interface_ports": [
+              "rgmii_0",
+              "axi_ethernet_0/rgmii"
+            ]
+          },
+          "axi_ethernet_0_dma_M_AXI_SG": {
+            "interface_ports": [
+              "M_AXI_SG",
+              "axi_ethernet_0_dma/M_AXI_SG"
             ]
           }
         },
@@ -2616,16 +2622,70 @@
       }
     },
     "interface_nets": {
+      "axi_ethernet_0_mdio": {
+        "interface_ports": [
+          "mdio_0",
+          "eth/mdio_0"
+        ]
+      },
       "axi_ethernet_0_dma_M_AXI_S2MM": {
         "interface_ports": [
           "eth/M_AXI_S2MM",
           "axi_smc/S02_AXI"
         ]
       },
-      "axi_ethernet_0_mdio": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "mdio_0",
-          "eth/mdio_0"
+          "ps7_0_axi_periph/M00_AXI",
+          "eth/s_axi"
+        ]
+      },
+      "ps7_0_IIC_0": {
+        "interface_ports": [
+          "hdmi_out_ddc",
+          "ps7_0/IIC_0"
+        ]
+      },
+      "ps7_0_axi_periph_M02_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M02_AXI",
+          "axi_intc_0/s_axi"
+        ]
+      },
+      "ps7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "ps7_0/DDR"
+        ]
+      },
+      "axi_ethernet_0_dma_M_AXI_SG": {
+        "interface_ports": [
+          "eth/M_AXI_SG",
+          "axi_smc/S00_AXI"
+        ]
+      },
+      "ps7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "ps7_0/FIXED_IO"
+        ]
+      },
+      "axi_ethernet_0_dma_M_AXI_MM2S": {
+        "interface_ports": [
+          "eth/M_AXI_MM2S",
+          "axi_smc/S01_AXI"
+        ]
+      },
+      "ps7_0_SPI_0": {
+        "interface_ports": [
+          "SPI_0_0",
+          "ps7_0/SPI_0"
+        ]
+      },
+      "axi_ethernet_0_rgmii": {
+        "interface_ports": [
+          "rgmii_0",
+          "eth/rgmii_0"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -2638,60 +2698,6 @@
         "interface_ports": [
           "ps7_0/M_AXI_GP0",
           "ps7_0_axi_periph/S00_AXI"
-        ]
-      },
-      "axi_ethernet_0_rgmii": {
-        "interface_ports": [
-          "rgmii_0",
-          "eth/rgmii_0"
-        ]
-      },
-      "axi_ethernet_0_dma_M_AXI_SG": {
-        "interface_ports": [
-          "eth/M_AXI_SG",
-          "axi_smc/S00_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M02_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M02_AXI",
-          "axi_intc_0/s_axi"
-        ]
-      },
-      "axi_ethernet_0_dma_M_AXI_MM2S": {
-        "interface_ports": [
-          "eth/M_AXI_MM2S",
-          "axi_smc/S01_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "eth/s_axi"
-        ]
-      },
-      "ps7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "ps7_0/FIXED_IO"
-        ]
-      },
-      "ps7_0_SPI_0": {
-        "interface_ports": [
-          "SPI_0_0",
-          "ps7_0/SPI_0"
-        ]
-      },
-      "ps7_0_IIC_0": {
-        "interface_ports": [
-          "hdmi_out_ddc",
-          "ps7_0/IIC_0"
-        ]
-      },
-      "ps7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "ps7_0/DDR"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
