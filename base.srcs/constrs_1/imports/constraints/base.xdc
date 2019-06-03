@@ -4,6 +4,10 @@ create_clock -period 8.000 -name rgmii_0_rxc [get_ports rgmii_0_rxc]
 set_property -dict {PACKAGE_PIN M17 IOSTANDARD LVCMOS33} [get_ports hdmi_out_ddc_scl_io]
 set_property -dict {PACKAGE_PIN M18 IOSTANDARD LVCMOS33} [get_ports hdmi_out_ddc_sda_io]
 
+set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_io1_io }]; #IO_L21N_T3_DQS_34 Sch=ck_io[9]
+set_property -dict { PACKAGE_PIN T16   IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_io0_io }]; #IO_L9P_T1_DQS_34 Sch=ck_io[10]
+set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_sck_io }]; #IO_L19N_T3_VREF_34 Sch=ck_io[11]
+set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_ss_io }]; #IO_L23N_T3_34 Sch=ck_io[12]
 
 ##Pmod Header JA
 
@@ -55,8 +59,8 @@ set_property -dict { PACKAGE_PIN V10   IOSTANDARD LVCMOS33 } [get_ports { mdio_0
 # set_property -dict { PACKAGE_PIN W6    IOSTANDARD LVCMOS33 } [get_ports { ck_io[35] }]; #IO_L22N_T3_13 Sch=ck_io[35]
 # set_property -dict { PACKAGE_PIN Y6    IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_rxc }]; #IO_L13N_T2_MRCC_13 Sch=ck_io[36]
 # set_property -dict { PACKAGE_PIN Y7    IOSTANDARD LVCMOS33 } [get_ports { rgmii_0_rxc}]; #IO_L13P_T2_MRCC_13 Sch=ck_io[37]
-# set_property -dict { PACKAGE_PIN W8    IOSTANDARD LVCMOS33 } [get_ports { ck_io[38] }]; #IO_L15N_T2_DQS_13 Sch=ck_io[38]
-# set_property -dict { PACKAGE_PIN Y8    IOSTANDARD LVCMOS33 } [get_ports { ck_io[39] }]; #IO_L14N_T2_SRCC_13 Sch=ck_io[39]
+set_property -dict { PACKAGE_PIN W8    IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_ss1_o }]; #IO_L15N_T2_DQS_13 Sch=ck_io[38]
+set_property -dict { PACKAGE_PIN Y8    IOSTANDARD LVCMOS33 } [get_ports { SPI_1_0_ss2_o }]; #IO_L14N_T2_SRCC_13 Sch=ck_io[39]
 set_property -dict { PACKAGE_PIN W9    IOSTANDARD LVCMOS33 } [get_ports { SPI_0_0_ss1_o }]; #IO_L16N_T2_13 Sch=ck_io[40]
 set_property -dict { PACKAGE_PIN Y9    IOSTANDARD LVCMOS33 } [get_ports { SPI_0_0_ss2_o }]; #IO_L14P_T2_SRCC_13 Sch=ck_io[41]
 set_property -dict { PACKAGE_PIN Y13   IOSTANDARD LVCMOS33 } [get_ports { phy_reset_n }]; #IO_L20N_T3_13 Sch=ck_ioa

@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Wed May 29 21:49:32 2019
+// Date        : Fri May 31 22:50:22 2019
 // Host        : nuc6i7 running 64-bit Ubuntu 19.04
 // Command     : write_verilog -force -mode synth_stub
 //               /home/zhang/Projects/teaching/pynq-router/base/base/base.srcs/sources_1/bd/base/ip/base_axi_ethernet_0_0/base_axi_ethernet_0_0_stub.v

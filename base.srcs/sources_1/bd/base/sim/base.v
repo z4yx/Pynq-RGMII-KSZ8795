@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed May 29 21:43:42 2019
+//Date        : Fri May 31 22:40:07 2019
 //Host        : nuc6i7 running 64-bit Ubuntu 19.04
 //Command     : generate_target base.bd
 //Design      : base
@@ -46,6 +46,20 @@ module base
     SPI_0_0_ss_i,
     SPI_0_0_ss_o,
     SPI_0_0_ss_t,
+    SPI_1_0_io0_i,
+    SPI_1_0_io0_o,
+    SPI_1_0_io0_t,
+    SPI_1_0_io1_i,
+    SPI_1_0_io1_o,
+    SPI_1_0_io1_t,
+    SPI_1_0_sck_i,
+    SPI_1_0_sck_o,
+    SPI_1_0_sck_t,
+    SPI_1_0_ss1_o,
+    SPI_1_0_ss2_o,
+    SPI_1_0_ss_i,
+    SPI_1_0_ss_o,
+    SPI_1_0_ss_t,
     hdmi_out_ddc_scl_i,
     hdmi_out_ddc_scl_o,
     hdmi_out_ddc_scl_t,
@@ -98,6 +112,20 @@ module base
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_I" *) input SPI_0_0_ss_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_O" *) output SPI_0_0_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_T" *) output SPI_0_0_ss_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO0_I" *) input SPI_1_0_io0_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO0_O" *) output SPI_1_0_io0_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO0_T" *) output SPI_1_0_io0_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO1_I" *) input SPI_1_0_io1_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO1_O" *) output SPI_1_0_io1_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 IO1_T" *) output SPI_1_0_io1_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SCK_I" *) input SPI_1_0_sck_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SCK_O" *) output SPI_1_0_sck_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SCK_T" *) output SPI_1_0_sck_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SS1_O" *) output SPI_1_0_ss1_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SS2_O" *) output SPI_1_0_ss2_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SS_I" *) input SPI_1_0_ss_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SS_O" *) output SPI_1_0_ss_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1_0 SS_T" *) output SPI_1_0_ss_t;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_out_ddc SCL_I" *) input hdmi_out_ddc_scl_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_out_ddc SCL_O" *) output hdmi_out_ddc_scl_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_out_ddc SCL_T" *) output hdmi_out_ddc_scl_t;
@@ -304,6 +332,20 @@ module base
   wire ps7_0_SPI_0_SS_I;
   wire ps7_0_SPI_0_SS_O;
   wire ps7_0_SPI_0_SS_T;
+  wire ps7_0_SPI_1_IO0_I;
+  wire ps7_0_SPI_1_IO0_O;
+  wire ps7_0_SPI_1_IO0_T;
+  wire ps7_0_SPI_1_IO1_I;
+  wire ps7_0_SPI_1_IO1_O;
+  wire ps7_0_SPI_1_IO1_T;
+  wire ps7_0_SPI_1_SCK_I;
+  wire ps7_0_SPI_1_SCK_O;
+  wire ps7_0_SPI_1_SCK_T;
+  wire ps7_0_SPI_1_SS1_O;
+  wire ps7_0_SPI_1_SS2_O;
+  wire ps7_0_SPI_1_SS_I;
+  wire ps7_0_SPI_1_SS_O;
+  wire ps7_0_SPI_1_SS_T;
   wire [31:0]ps7_0_axi_periph_M00_AXI_ARADDR;
   wire ps7_0_axi_periph_M00_AXI_ARREADY;
   wire ps7_0_axi_periph_M00_AXI_ARVALID;
@@ -367,6 +409,16 @@ module base
   assign SPI_0_0_ss2_o = ps7_0_SPI_0_SS2_O;
   assign SPI_0_0_ss_o = ps7_0_SPI_0_SS_O;
   assign SPI_0_0_ss_t = ps7_0_SPI_0_SS_T;
+  assign SPI_1_0_io0_o = ps7_0_SPI_1_IO0_O;
+  assign SPI_1_0_io0_t = ps7_0_SPI_1_IO0_T;
+  assign SPI_1_0_io1_o = ps7_0_SPI_1_IO1_O;
+  assign SPI_1_0_io1_t = ps7_0_SPI_1_IO1_T;
+  assign SPI_1_0_sck_o = ps7_0_SPI_1_SCK_O;
+  assign SPI_1_0_sck_t = ps7_0_SPI_1_SCK_T;
+  assign SPI_1_0_ss1_o = ps7_0_SPI_1_SS1_O;
+  assign SPI_1_0_ss2_o = ps7_0_SPI_1_SS2_O;
+  assign SPI_1_0_ss_o = ps7_0_SPI_1_SS_O;
+  assign SPI_1_0_ss_t = ps7_0_SPI_1_SS_T;
   assign axi_ethernet_0_mdio_MDIO_I = mdio_0_mdio_i;
   assign axi_ethernet_0_rgmii_RD = rgmii_0_rd[3:0];
   assign axi_ethernet_0_rgmii_RXC = rgmii_0_rxc;
@@ -385,6 +437,10 @@ module base
   assign ps7_0_SPI_0_IO1_I = SPI_0_0_io1_i;
   assign ps7_0_SPI_0_SCK_I = SPI_0_0_sck_i;
   assign ps7_0_SPI_0_SS_I = SPI_0_0_ss_i;
+  assign ps7_0_SPI_1_IO0_I = SPI_1_0_io0_i;
+  assign ps7_0_SPI_1_IO1_I = SPI_1_0_io1_i;
+  assign ps7_0_SPI_1_SCK_I = SPI_1_0_sck_i;
+  assign ps7_0_SPI_1_SS_I = SPI_1_0_ss_i;
   assign rgmii_0_td[3:0] = axi_ethernet_0_rgmii_TD;
   assign rgmii_0_tx_ctl = axi_ethernet_0_rgmii_TX_CTL;
   assign rgmii_0_txc = axi_ethernet_0_rgmii_TXC;
@@ -709,6 +765,20 @@ module base
         .SPI0_SS_I(ps7_0_SPI_0_SS_I),
         .SPI0_SS_O(ps7_0_SPI_0_SS_O),
         .SPI0_SS_T(ps7_0_SPI_0_SS_T),
+        .SPI1_MISO_I(ps7_0_SPI_1_IO1_I),
+        .SPI1_MISO_O(ps7_0_SPI_1_IO1_O),
+        .SPI1_MISO_T(ps7_0_SPI_1_IO1_T),
+        .SPI1_MOSI_I(ps7_0_SPI_1_IO0_I),
+        .SPI1_MOSI_O(ps7_0_SPI_1_IO0_O),
+        .SPI1_MOSI_T(ps7_0_SPI_1_IO0_T),
+        .SPI1_SCLK_I(ps7_0_SPI_1_SCK_I),
+        .SPI1_SCLK_O(ps7_0_SPI_1_SCK_O),
+        .SPI1_SCLK_T(ps7_0_SPI_1_SCK_T),
+        .SPI1_SS1_O(ps7_0_SPI_1_SS1_O),
+        .SPI1_SS2_O(ps7_0_SPI_1_SS2_O),
+        .SPI1_SS_I(ps7_0_SPI_1_SS_I),
+        .SPI1_SS_O(ps7_0_SPI_1_SS_O),
+        .SPI1_SS_T(ps7_0_SPI_1_SS_T),
         .S_AXI_HP0_ACLK(ps7_0_FCLK_CLK0),
         .S_AXI_HP0_ARADDR(axi_smc_M00_AXI_ARADDR),
         .S_AXI_HP0_ARBURST(axi_smc_M00_AXI_ARBURST),

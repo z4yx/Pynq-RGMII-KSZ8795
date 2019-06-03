@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed May 29 21:49:06 2019
+-- Date        : Fri May 31 22:49:55 2019
 -- Host        : nuc6i7 running 64-bit Ubuntu 19.04
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/zhang/Projects/teaching/pynq-router/base/base/base.srcs/sources_1/bd/base/ip/base_axi_ethernet_0_0/bd_0/ip/ip_0/bd_6e76_eth_buf_0_sim_netlist.vhdl
@@ -77192,37 +77192,37 @@ architecture STRUCTURE of bd_6e76_eth_buf_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of AXI_STR_RXD_ACLK : signal is "xilinx.com:signal:clock:1.0 AXI_STR_RXD_ACLK CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of AXI_STR_RXD_ACLK : signal is "XIL_INTERFACENAME AXI_STR_RXD_ACLK, ASSOCIATED_BUSIF AXI_STR_RXD, ASSOCIATED_RESET AXI_STR_RXD_ARESETN, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_RXD_ACLK : signal is "XIL_INTERFACENAME AXI_STR_RXD_ACLK, ASSOCIATED_BUSIF AXI_STR_RXD, ASSOCIATED_RESET AXI_STR_RXD_ARESETN, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_RXD_ARESETN : signal is "xilinx.com:signal:reset:1.0 AXI_STR_RXD_ARESETN RST";
   attribute x_interface_parameter of AXI_STR_RXD_ARESETN : signal is "XIL_INTERFACENAME AXI_STR_RXD_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_RXD_LAST : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXD TLAST";
   attribute x_interface_info of AXI_STR_RXD_READY : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXD TREADY";
   attribute x_interface_info of AXI_STR_RXD_VALID : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXD TVALID";
-  attribute x_interface_parameter of AXI_STR_RXD_VALID : signal is "XIL_INTERFACENAME AXI_STR_RXD, FREQ_HZ 1e+08, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_RXD_VALID : signal is "XIL_INTERFACENAME AXI_STR_RXD, FREQ_HZ 100000000, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_RXS_ACLK : signal is "xilinx.com:signal:clock:1.0 AXI_STR_RXS_ACLK CLK";
-  attribute x_interface_parameter of AXI_STR_RXS_ACLK : signal is "XIL_INTERFACENAME AXI_STR_RXS_ACLK, ASSOCIATED_BUSIF AXI_STR_RXS, ASSOCIATED_RESET AXI_STR_RXS_ARESETN, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_RXS_ACLK : signal is "XIL_INTERFACENAME AXI_STR_RXS_ACLK, ASSOCIATED_BUSIF AXI_STR_RXS, ASSOCIATED_RESET AXI_STR_RXS_ARESETN, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_RXS_ARESETN : signal is "xilinx.com:signal:reset:1.0 AXI_STR_RXS_ARESETN RST";
   attribute x_interface_parameter of AXI_STR_RXS_ARESETN : signal is "XIL_INTERFACENAME AXI_STR_RXS_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_RXS_LAST : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXS TLAST";
   attribute x_interface_info of AXI_STR_RXS_READY : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXS TREADY";
   attribute x_interface_info of AXI_STR_RXS_VALID : signal is "xilinx.com:interface:axis:1.0 AXI_STR_RXS TVALID";
-  attribute x_interface_parameter of AXI_STR_RXS_VALID : signal is "XIL_INTERFACENAME AXI_STR_RXS, FREQ_HZ 1e+08, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_RXS_VALID : signal is "XIL_INTERFACENAME AXI_STR_RXS, FREQ_HZ 100000000, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXC_ACLK : signal is "xilinx.com:signal:clock:1.0 AXI_STR_TXC_ACLK CLK";
-  attribute x_interface_parameter of AXI_STR_TXC_ACLK : signal is "XIL_INTERFACENAME AXI_STR_TXC_ACLK, ASSOCIATED_BUSIF AXI_STR_TXC, ASSOCIATED_RESET AXI_STR_TXC_ARESETN, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_TXC_ACLK : signal is "XIL_INTERFACENAME AXI_STR_TXC_ACLK, ASSOCIATED_BUSIF AXI_STR_TXC, ASSOCIATED_RESET AXI_STR_TXC_ARESETN, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXC_ARESETN : signal is "xilinx.com:signal:reset:1.0 AXI_STR_TXC_ARESETN RST";
   attribute x_interface_parameter of AXI_STR_TXC_ARESETN : signal is "XIL_INTERFACENAME AXI_STR_TXC_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXC_TLAST : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXC TLAST";
   attribute x_interface_info of AXI_STR_TXC_TREADY : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXC TREADY";
   attribute x_interface_info of AXI_STR_TXC_TVALID : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXC TVALID";
-  attribute x_interface_parameter of AXI_STR_TXC_TVALID : signal is "XIL_INTERFACENAME AXI_STR_TXC, FREQ_HZ 1e+08, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_TXC_TVALID : signal is "XIL_INTERFACENAME AXI_STR_TXC, FREQ_HZ 100000000, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXD_ACLK : signal is "xilinx.com:signal:clock:1.0 AXI_STR_TXD_ACLK CLK";
-  attribute x_interface_parameter of AXI_STR_TXD_ACLK : signal is "XIL_INTERFACENAME AXI_STR_TXD_ACLK, ASSOCIATED_BUSIF AXI_STR_TXD, ASSOCIATED_RESET AXI_STR_TXD_ARESETN, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_TXD_ACLK : signal is "XIL_INTERFACENAME AXI_STR_TXD_ACLK, ASSOCIATED_BUSIF AXI_STR_TXD, ASSOCIATED_RESET AXI_STR_TXD_ARESETN, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXD_ARESETN : signal is "xilinx.com:signal:reset:1.0 AXI_STR_TXD_ARESETN RST";
   attribute x_interface_parameter of AXI_STR_TXD_ARESETN : signal is "XIL_INTERFACENAME AXI_STR_TXD_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of AXI_STR_TXD_TLAST : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TLAST";
   attribute x_interface_info of AXI_STR_TXD_TREADY : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TREADY";
   attribute x_interface_info of AXI_STR_TXD_TVALID : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TVALID";
-  attribute x_interface_parameter of AXI_STR_TXD_TVALID : signal is "XIL_INTERFACENAME AXI_STR_TXD, FREQ_HZ 1e+08, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of AXI_STR_TXD_TVALID : signal is "XIL_INTERFACENAME AXI_STR_TXD, FREQ_HZ 100000000, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of EMAC_CLIENT_AUTONEG_INT : signal is "xilinx.com:signal:interrupt:1.0 EMAC_CLIENT_AUTONEG_INT INTERRUPT";
   attribute x_interface_parameter of EMAC_CLIENT_AUTONEG_INT : signal is "XIL_INTERFACENAME EMAC_CLIENT_AUTONEG_INT, SENSITIVITY EDGE_RISING, PortWidth 1";
   attribute x_interface_info of GTX_CLK : signal is "xilinx.com:signal:clock:1.0 GTX_CLK CLK";
@@ -77248,7 +77248,7 @@ architecture STRUCTURE of bd_6e76_eth_buf_0 is
   attribute x_interface_info of S_AXI_2TEMAC_WREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC WREADY";
   attribute x_interface_info of S_AXI_2TEMAC_WVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC WVALID";
   attribute x_interface_info of S_AXI_ACLK : signal is "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
-  attribute x_interface_parameter of S_AXI_ACLK : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI:S_AXI_2TEMAC, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of S_AXI_ACLK : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI:S_AXI_2TEMAC, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_ARESETN : signal is "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";
   attribute x_interface_parameter of S_AXI_ARESETN : signal is "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_ARREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARREADY";
@@ -77295,14 +77295,14 @@ architecture STRUCTURE of bd_6e76_eth_buf_0 is
   attribute x_interface_info of AXI_STR_TXD_TKEEP : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TKEEP";
   attribute x_interface_info of S_AXI_2TEMAC_ARADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC ARADDR";
   attribute x_interface_info of S_AXI_2TEMAC_AWADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC AWADDR";
-  attribute x_interface_parameter of S_AXI_2TEMAC_AWADDR : signal is "XIL_INTERFACENAME S_AXI_2TEMAC, FREQ_HZ 1e+08, DATA_WIDTH 32, PROTOCOL AXI4LITE, ID_WIDTH 0, ADDR_WIDTH 12, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of S_AXI_2TEMAC_AWADDR : signal is "XIL_INTERFACENAME S_AXI_2TEMAC, FREQ_HZ 100000000, DATA_WIDTH 32, PROTOCOL AXI4LITE, ID_WIDTH 0, ADDR_WIDTH 12, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_2TEMAC_BRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC BRESP";
   attribute x_interface_info of S_AXI_2TEMAC_RDATA : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC RDATA";
   attribute x_interface_info of S_AXI_2TEMAC_RRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC RRESP";
   attribute x_interface_info of S_AXI_2TEMAC_WDATA : signal is "xilinx.com:interface:aximm:1.0 S_AXI_2TEMAC WDATA";
   attribute x_interface_info of S_AXI_ARADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of S_AXI_AWADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of S_AXI_AWADDR : signal is "XIL_INTERFACENAME S_AXI, FREQ_HZ 1e+08, DATA_WIDTH 32, PROTOCOL AXI4LITE, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of S_AXI_AWADDR : signal is "XIL_INTERFACENAME S_AXI, FREQ_HZ 100000000, DATA_WIDTH 32, PROTOCOL AXI4LITE, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN base_ps7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_BRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of S_AXI_RDATA : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of S_AXI_RRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";

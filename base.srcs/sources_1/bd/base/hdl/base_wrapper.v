@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed May 29 21:43:42 2019
+//Date        : Fri May 31 22:40:07 2019
 //Host        : nuc6i7 running 64-bit Ubuntu 19.04
 //Command     : generate_target base_wrapper.bd
 //Design      : base_wrapper
@@ -37,6 +37,12 @@ module base_wrapper
     SPI_0_0_ss1_o,
     SPI_0_0_ss2_o,
     SPI_0_0_ss_io,
+    SPI_1_0_io0_io,
+    SPI_1_0_io1_io,
+    SPI_1_0_sck_io,
+    SPI_1_0_ss1_o,
+    SPI_1_0_ss2_o,
+    SPI_1_0_ss_io,
     hdmi_out_ddc_scl_io,
     hdmi_out_ddc_sda_io,
     mdio_0_mdc,
@@ -75,6 +81,12 @@ module base_wrapper
   output SPI_0_0_ss1_o;
   output SPI_0_0_ss2_o;
   inout SPI_0_0_ss_io;
+  inout SPI_1_0_io0_io;
+  inout SPI_1_0_io1_io;
+  inout SPI_1_0_sck_io;
+  output SPI_1_0_ss1_o;
+  output SPI_1_0_ss2_o;
+  inout SPI_1_0_ss_io;
   inout hdmi_out_ddc_scl_io;
   inout hdmi_out_ddc_sda_io;
   output mdio_0_mdc;
@@ -126,6 +138,24 @@ module base_wrapper
   wire SPI_0_0_ss_io;
   wire SPI_0_0_ss_o;
   wire SPI_0_0_ss_t;
+  wire SPI_1_0_io0_i;
+  wire SPI_1_0_io0_io;
+  wire SPI_1_0_io0_o;
+  wire SPI_1_0_io0_t;
+  wire SPI_1_0_io1_i;
+  wire SPI_1_0_io1_io;
+  wire SPI_1_0_io1_o;
+  wire SPI_1_0_io1_t;
+  wire SPI_1_0_sck_i;
+  wire SPI_1_0_sck_io;
+  wire SPI_1_0_sck_o;
+  wire SPI_1_0_sck_t;
+  wire SPI_1_0_ss1_o;
+  wire SPI_1_0_ss2_o;
+  wire SPI_1_0_ss_i;
+  wire SPI_1_0_ss_io;
+  wire SPI_1_0_ss_o;
+  wire SPI_1_0_ss_t;
   wire hdmi_out_ddc_scl_i;
   wire hdmi_out_ddc_scl_io;
   wire hdmi_out_ddc_scl_o;
@@ -167,6 +197,26 @@ module base_wrapper
         .IO(SPI_0_0_ss_io),
         .O(SPI_0_0_ss_i),
         .T(SPI_0_0_ss_t));
+  IOBUF SPI_1_0_io0_iobuf
+       (.I(SPI_1_0_io0_o),
+        .IO(SPI_1_0_io0_io),
+        .O(SPI_1_0_io0_i),
+        .T(SPI_1_0_io0_t));
+  IOBUF SPI_1_0_io1_iobuf
+       (.I(SPI_1_0_io1_o),
+        .IO(SPI_1_0_io1_io),
+        .O(SPI_1_0_io1_i),
+        .T(SPI_1_0_io1_t));
+  IOBUF SPI_1_0_sck_iobuf
+       (.I(SPI_1_0_sck_o),
+        .IO(SPI_1_0_sck_io),
+        .O(SPI_1_0_sck_i),
+        .T(SPI_1_0_sck_t));
+  IOBUF SPI_1_0_ss_iobuf
+       (.I(SPI_1_0_ss_o),
+        .IO(SPI_1_0_ss_io),
+        .O(SPI_1_0_ss_i),
+        .T(SPI_1_0_ss_t));
   base base_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -203,6 +253,20 @@ module base_wrapper
         .SPI_0_0_ss_i(SPI_0_0_ss_i),
         .SPI_0_0_ss_o(SPI_0_0_ss_o),
         .SPI_0_0_ss_t(SPI_0_0_ss_t),
+        .SPI_1_0_io0_i(SPI_1_0_io0_i),
+        .SPI_1_0_io0_o(SPI_1_0_io0_o),
+        .SPI_1_0_io0_t(SPI_1_0_io0_t),
+        .SPI_1_0_io1_i(SPI_1_0_io1_i),
+        .SPI_1_0_io1_o(SPI_1_0_io1_o),
+        .SPI_1_0_io1_t(SPI_1_0_io1_t),
+        .SPI_1_0_sck_i(SPI_1_0_sck_i),
+        .SPI_1_0_sck_o(SPI_1_0_sck_o),
+        .SPI_1_0_sck_t(SPI_1_0_sck_t),
+        .SPI_1_0_ss1_o(SPI_1_0_ss1_o),
+        .SPI_1_0_ss2_o(SPI_1_0_ss2_o),
+        .SPI_1_0_ss_i(SPI_1_0_ss_i),
+        .SPI_1_0_ss_o(SPI_1_0_ss_o),
+        .SPI_1_0_ss_t(SPI_1_0_ss_t),
         .hdmi_out_ddc_scl_i(hdmi_out_ddc_scl_i),
         .hdmi_out_ddc_scl_o(hdmi_out_ddc_scl_o),
         .hdmi_out_ddc_scl_t(hdmi_out_ddc_scl_t),

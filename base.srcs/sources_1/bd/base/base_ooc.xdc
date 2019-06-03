@@ -7,5 +7,6 @@
 # of Vivado)
 ################################################################################
 create_clock -name rgmii_0_rxc -period 10 [get_ports rgmii_0_rxc]
+create_clock -name ps7_0_FCLK_CLK0 -period 10 [get_pins ps7_0/FCLK_CLK0]
 
 ################################################################################

@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Sat May 18 23:47:08 2019
+-- Date        : Fri May 31 22:41:57 2019
 -- Host        : nuc6i7 running 64-bit Ubuntu 19.04
--- Command     : write_vhdl -force -mode synth_stub -rename_top base_auto_pc_0 -prefix
---               base_auto_pc_0_ base_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/zhang/Projects/teaching/pynq-router/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_stub.vhdl
 -- Design      : base_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
